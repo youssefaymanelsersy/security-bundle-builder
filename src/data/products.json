@@ -1,0 +1,78 @@
+[
+  {
+    "id": "prod_outdoor_cam",
+    "category": "cameras",
+    "title": "Outdoor Camera",
+    "description": "Weatherproof camera with night vision.",
+    "price": 199,
+    "comparePrice": 249,
+    "badge": "Best Seller",
+    "image": "https://placehold.co/400x300?text=Outdoor+Cam",
+    "learnMoreUrl": "#",
+    "allowMultiple": true,
+    "variants": [
+      {
+        "id": "var_black",
+        "name": "Black",
+        "color": "#000000",
+        "defaultQuantity": 2
+      },
+      {
+        "id": "var_white",
+        "name": "White",
+        "color": "#FFFFFF",
+        "defaultQuantity": 1
+      }
+    ]
+  },
+  {
+    "id": "prod_indoor_cam",
+    "category": "cameras",
+    "title": "Indoor Camera",
+    "description": "Compact camera for inside your home.",
+    "price": 99,
+    "image": "https://placehold.co/400x300?text=Indoor+Cam",
+    "allowMultiple": true,
+    "defaultQuantity": 0
+  },
+  {
+    "id": "prod_pro_monitoring",
+    "category": "plan",
+    "title": "Pro Monitoring",
+    "description": "24/7 professional monitoring service.",
+    "price": 24.99,
+    "image": "https://placehold.co/400x300?text=Pro+Monitoring",
+    "allowMultiple": false,
+    "defaultQuantity": 1
+  },
+  {
+    "id": "prod_door_sensor",
+    "category": "sensors",
+    "title": "Door/Window Sensor",
+    "description": "Alerts when a door or window is opened.",
+    "price": 29,
+    "image": "https://placehold.co/400x300?text=Door+Sensor",
+    "allowMultiple": true,
+    "defaultQuantity": 2
+  },
+  {
+    "id": "prod_motion_sensor",
+    "category": "sensors",
+    "title": "Motion Sensor",
+    "description": "Detects movement in a room.",
+    "price": 39,
+    "image": "https://placehold.co/400x300?text=Motion+Sensor",
+    "allowMultiple": true,
+    "defaultQuantity": 0
+  },
+  {
+    "id": "prod_keypad",
+    "category": "accessories",
+    "title": "Wireless Keypad",
+    "description": "Arm and disarm your system.",
+    "price": 49,
+    "image": "https://placehold.co/400x300?text=Keypad",
+    "allowMultiple": true,
+    "defaultQuantity": 1
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "cameras",
+    "name": "Cameras",
+    "description": "Keep an eye on things inside and out.",
+    "stepOrder": 1
+  },
+  {
+    "id": "plan",
+    "name": "Plan",
+    "description": "Professional monitoring.",
+    "stepOrder": 2
+  },
+  {
+    "id": "sensors",
+    "name": "Sensors",
+    "description": "Detect intrusion and motion.",
+    "stepOrder": 3
+  },
+  {
+    "id": "accessories",
+    "name": "Accessories",
+    "description": "Expand your system.",
+    "stepOrder": 4
+  }
+]
