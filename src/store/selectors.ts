@@ -43,14 +43,24 @@ export const getReviewItems = (state: BundleState, products: Product[]): ReviewI
 };
 
 export const getCategoryCounts = (state: BundleState, products: Product[]): Record<string, number> => {
-  const counts: Record<string, number> = {};
+  const selectedProductIdsByCategory: Record<string, Set<string>> = {};
+  
   state.selections.forEach(selection => {
     if (selection.quantity > 0) {
       const product = products.find(p => p.id === selection.productId);
       if (product) {
-        counts[product.category] = (counts[product.category] || 0) + selection.quantity;
+        if (!selectedProductIdsByCategory[product.category]) {
+          selectedProductIdsByCategory[product.category] = new Set();
+        }
+        selectedProductIdsByCategory[product.category].add(product.id);
       }
     }
   });
+
+  const counts: Record<string, number> = {};
+  Object.keys(selectedProductIdsByCategory).forEach(category => {
+    counts[category] = selectedProductIdsByCategory[category].size;
+  });
+  
   return counts;
 };

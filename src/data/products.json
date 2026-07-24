@@ -1,78 +1,109 @@
 [
   {
-    "id": "prod_outdoor_cam",
+    "id": "prod_cam_v4",
     "category": "cameras",
-    "title": "Outdoor Camera",
-    "description": "Weatherproof camera with night vision.",
-    "price": 199,
-    "comparePrice": 249,
-    "badge": "Best Seller",
-    "image": "https://placehold.co/400x300?text=Outdoor+Cam",
-    "learnMoreUrl": "#",
+    "title": "Wyze Cam v4",
+    "description": "The clearest Wyze Cam ever made.",
+    "price": 27.98,
+    "comparePrice": 35.98,
+    "badge": "Save 22%",
+    "image": "https://placehold.co/400x300?text=Wyze+Cam+v4",
     "allowMultiple": true,
-    "variants": [
-      {
-        "id": "var_black",
-        "name": "Black",
-        "color": "#000000",
-        "defaultQuantity": 2
-      },
-      {
-        "id": "var_white",
-        "name": "White",
-        "color": "#FFFFFF",
-        "defaultQuantity": 1
-      }
-    ]
+    "defaultQuantity": 1
   },
   {
-    "id": "prod_indoor_cam",
+    "id": "prod_cam_pan_v3",
     "category": "cameras",
-    "title": "Indoor Camera",
-    "description": "Compact camera for inside your home.",
-    "price": 99,
-    "image": "https://placehold.co/400x300?text=Indoor+Cam",
+    "title": "Wyze Cam Pan v3",
+    "description": "360° pan and 180° tilt security camera.",
+    "price": 34.98,
+    "comparePrice": 39.98,
+    "badge": "Save 12%",
+    "image": "https://placehold.co/400x300?text=Wyze+Cam+Pan+v3",
     "allowMultiple": true,
     "defaultQuantity": 0
   },
   {
-    "id": "prod_pro_monitoring",
-    "category": "plan",
-    "title": "Pro Monitoring",
-    "description": "24/7 professional monitoring service.",
-    "price": 24.99,
-    "image": "https://placehold.co/400x300?text=Pro+Monitoring",
+    "id": "prod_floodlight_v2",
+    "category": "cameras",
+    "title": "Wyze Cam Floodlight v2",
+    "description": "2K floodlight camera with a 160° wide-angle view for your garage.",
+    "price": 69.98,
+    "comparePrice": 89.98,
+    "badge": "Save 22%",
+    "image": "https://placehold.co/400x300?text=Floodlight+v2",
+    "allowMultiple": true,
+    "defaultQuantity": 0
+  },
+  {
+    "id": "prod_doorbell",
+    "category": "cameras",
+    "title": "Wyze Duo Cam Doorbell",
+    "description": "Two cameras. Two views. Double the porch protection.",
+    "price": 69.98,
+    "image": "https://placehold.co/400x300?text=Duo+Cam+Doorbell",
+    "allowMultiple": true,
+    "defaultQuantity": 0
+  },
+  {
+    "id": "prod_battery_pro",
+    "category": "cameras",
+    "title": "Wyze Battery Cam Pro",
+    "description": "Protect anywhere. See everything in 2.5K HDR. No power outlet or electrician needed.",
+    "price": 89.98,
+    "image": "https://placehold.co/400x300?text=Battery+Cam+Pro",
+    "allowMultiple": true,
+    "defaultQuantity": 0
+  },
+  {
+    "id": "prod_sense_hub",
+    "category": "sensors",
+    "title": "Wyze Sense Hub",
+    "description": "Required to connect all Wyze Sense devices.",
+    "price": 29.92,
+    "image": "https://placehold.co/400x300?text=Sense+Hub",
     "allowMultiple": false,
     "defaultQuantity": 1
   },
   {
-    "id": "prod_door_sensor",
-    "category": "sensors",
-    "title": "Door/Window Sensor",
-    "description": "Alerts when a door or window is opened.",
-    "price": 29,
-    "image": "https://placehold.co/400x300?text=Door+Sensor",
-    "allowMultiple": true,
-    "defaultQuantity": 2
-  },
-  {
     "id": "prod_motion_sensor",
     "category": "sensors",
-    "title": "Motion Sensor",
-    "description": "Detects movement in a room.",
-    "price": 39,
+    "title": "Wyze Sense Motion Sensor",
+    "description": "Detects motion within a 120° field of view.",
+    "price": 59.98,
     "image": "https://placehold.co/400x300?text=Motion+Sensor",
     "allowMultiple": true,
     "defaultQuantity": 0
   },
   {
     "id": "prod_keypad",
-    "category": "accessories",
-    "title": "Wireless Keypad",
-    "description": "Arm and disarm your system.",
-    "price": 49,
-    "image": "https://placehold.co/400x300?text=Keypad",
+    "category": "sensors",
+    "title": "Wyze Sense Keypad",
+    "description": "Quickly arm or disarm your system.",
+    "price": 5.99,
+    "image": "https://placehold.co/400x300?text=Sense+Keypad",
     "allowMultiple": true,
+    "defaultQuantity": 0
+  },
+  {
+    "id": "prod_sd_card",
+    "category": "accessories",
+    "title": "Wyze MicroSD Card (256GB)",
+    "description": "Black 256GB microSD card with the Wyze logo on it. Includes Class 10 and UHS-3 (U3) labelling.",
+    "price": 41.96,
+    "image": "https://placehold.co/400x300?text=256GB+MicroSD",
+    "allowMultiple": true,
+    "defaultQuantity": 0
+  },
+  {
+    "id": "prod_cam_unlimited",
+    "category": "plan",
+    "title": "Cam Unlimited",
+    "description": "Unlimited recording and advanced AI features.",
+    "price": 9.99,
+    "comparePrice": 12.99,
+    "image": "https://placehold.co/400x300?text=Cam+Unlimited",
+    "allowMultiple": false,
     "defaultQuantity": 1
   }
 ]

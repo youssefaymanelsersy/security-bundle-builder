@@ -31,53 +31,53 @@ export const AccordionStep = memo(function AccordionStep({
   const contentId = `step-${stepNumber}-content`;
   return (
     <div className="mb-6">
-      <div className="text-xs font-semibold tracking-wider text-gray-500 uppercase mb-2 ml-1">
+      <div className="text-[10px] font-['Gilroy-Medium'] tracking-[1.6px] text-[#484848] uppercase mb-2 ml-1">
         Step {stepNumber} of {totalSteps}
       </div>
       <div className={cn(
-        "border rounded-xl bg-white overflow-hidden transition-all duration-300",
-        isOpen ? "border-indigo-600 shadow-sm ring-1 ring-indigo-600" : "border-gray-200 shadow-sm"
+        "border rounded-[5px] bg-[#FFFFFF] overflow-hidden transition-all duration-300",
+        isOpen ? "border-[#4E2FD2] shadow-[0px_4px_12px_rgba(0,0,0,0.05)] ring-1 ring-[#4E2FD2]" : "border-[#CED6DE] shadow-sm"
       )}>
         <button
           onClick={onToggle}
           aria-expanded={isOpen}
           aria-controls={contentId}
-          className="w-full flex items-center justify-between p-5 bg-white hover:bg-gray-50 transition-colors text-left outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-indigo-600"
+          className="w-full flex items-center justify-between px-[15px] py-[20px] bg-[#FFFFFF] hover:bg-[#F0F4F7] transition-colors text-left outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#4E2FD2]"
         >
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-[8px]">
             <div className={cn(
-              "flex items-center justify-center transition-colors",
-              isOpen ? "text-indigo-600" : "text-gray-400"
+              "flex items-center justify-center transition-colors w-[20px] h-[20px]",
+              isOpen ? "text-[#4E2FD2]" : "text-[#6F7882]"
             )}>
               {icon}
             </div>
-            <h2 className="text-lg font-medium text-gray-900">{title}</h2>
+            <h2 className="text-[18px] leading-[100%] font-['Gilroy-SemiBold'] text-[#0B0D10]">{title}</h2>
           </div>
           
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-[4px]">
             {selectedCount > 0 && (
-              <span className="text-sm font-medium text-indigo-600">
+              <span className="text-[14px] leading-[16px] font-['Gilroy-Medium'] text-[#4E2FD2]">
                 {selectedCount} selected
               </span>
             )}
             <ChevronDown className={cn(
-              "w-5 h-5 transition-transform duration-300",
-              isOpen ? "transform rotate-180 text-indigo-600" : (selectedCount > 0 ? "text-indigo-600" : "text-gray-400")
+              "w-[12px] h-[12px] transition-transform duration-300",
+              isOpen ? "transform rotate-180 text-[#4E2FD2]" : (selectedCount > 0 ? "text-[#4E2FD2]" : "text-[#6F7882]")
             )} />
           </div>
         </button>
         
         {isOpen && (
-          <div id={contentId} className="flex flex-col border-t border-gray-100 bg-indigo-50/10">
-            <div className="p-6">
+          <div id={contentId} className="flex flex-col border-t border-[#CED6DE] bg-transparent">
+            <div className="p-[20px]">
               {children}
             </div>
             
             {onNext && nextStepTitle && (
-              <div className="p-6 border-t border-gray-100 bg-white flex justify-center">
+              <div className="p-[20px] border-t border-[#CED6DE] bg-[#FFFFFF] flex justify-center">
                 <button 
                   onClick={onNext}
-                  className="flex items-center space-x-2 bg-transparent border-2 border-indigo-600 text-indigo-600 hover:bg-indigo-50 px-8 py-2.5 rounded-full font-medium transition-colors"
+                  className="flex items-center space-x-[8px] bg-transparent border-[2px] border-[#4E2FD2] text-[#4E2FD2] hover:bg-[#F0F4F7] px-[32px] py-[10px] rounded-full font-['Gilroy-Medium'] text-[14px] transition-colors"
                 >
                   <span>Next: {nextStepTitle}</span>
                 </button>

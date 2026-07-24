@@ -74,22 +74,14 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 font-sans text-gray-900 flex flex-col">
-      <header className="bg-white border-b border-gray-200 sticky top-0 z-10 shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
-            SecureHome Builder
-          </h1>
-        </div>
-      </header>
+    <div className="min-h-screen bg-[#FFFFFF] font-['Gilroy-Medium'] text-[#1F1F1F] flex flex-col pt-[31px]">
 
-      <main className="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
+      <main className="flex-grow w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           
           <div className="lg:col-span-8">
-            <div className="mb-8">
-              <h2 className="text-3xl font-bold mb-2">Build Your Security System</h2>
-              <p className="text-gray-500 text-lg">Select the components that best fit your home.</p>
+            <div className="mb-[20px] flex justify-center">
+              <h2 className="text-[31.875px] leading-[110%] font-headline font-bold text-[#1F1F1F] tracking-[-0.064px]">Let’s get started!</h2>
             </div>
             
             <BuilderSteps categories={categories} products={products} />

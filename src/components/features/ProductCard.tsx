@@ -27,25 +27,25 @@ export const ProductCard = memo(function ProductCard({ product }: ProductCardPro
   const handleSelectVariant = useCallback((variantId: string) => selectVariant(product.id, variantId), [selectVariant, product.id]);
 
   return (
-    <div className={`flex flex-col rounded-xl border shadow-sm overflow-hidden transition-all duration-200 hover:shadow-md ${
-      quantity > 0 ? 'border-indigo-600 ring-1 ring-indigo-600 bg-indigo-50/10' : 'border-gray-200 bg-white'
+    <div className={`flex flex-col rounded-[5px] border-[1.5px] overflow-hidden transition-all duration-200 ${
+      quantity > 0 ? 'border-[#4E2FD2] bg-[#E7EFFD]' : 'border-[#CED6DE] bg-[#FFFFFF]'
     }`}>
-      <div className="relative aspect-[4/3] bg-gray-50 flex items-center justify-center overflow-hidden">
+      <div className="relative aspect-[4/3] bg-[#FFFFFF] flex items-center justify-center overflow-hidden">
         {product.badge && (
-          <span className="absolute top-3 left-3 bg-indigo-600 text-white text-[10px] uppercase tracking-wider font-bold px-2.5 py-1 rounded-full shadow-sm">
+          <span className="absolute top-3 left-3 bg-[#4E2FD2] text-[#FFFFFF] text-[10px] uppercase tracking-wider font-bold px-2.5 py-1 rounded-[4px]">
             {product.badge}
           </span>
         )}
-        <img src={product.image} alt={product.title} loading="lazy" className="w-full h-full object-cover mix-blend-multiply p-4" />
+        <img src={product.image} alt={product.title} loading="lazy" className="w-full h-full object-cover p-4" />
       </div>
       
-      <div className="p-5 flex flex-col flex-grow">
-        <h3 className="font-semibold text-gray-900 leading-tight mb-2 text-base">{product.title}</h3>
+      <div className="p-[20px] flex flex-col flex-grow bg-transparent">
+        <h3 className="font-['Gilroy-SemiBold'] text-[#0B0D10] leading-[100%] mb-[8px] text-[18px]">{product.title}</h3>
         
-        <p className="text-sm text-gray-500 mb-5 flex-grow">
+        <p className="text-[14px] leading-[16px] text-[#6F7882] font-['Gilroy-Medium'] mb-[20px] flex-grow">
           {product.description}
           {product.learnMoreUrl && (
-            <a href={product.learnMoreUrl} className="text-indigo-600 hover:underline ml-1 font-medium">Learn More</a>
+            <a href={product.learnMoreUrl} className="text-[#484848] font-['Gilroy-RegularItalic'] italic underline ml-1 hover:text-[#0B0D10]">Learn More</a>
           )}
         </p>
         
@@ -61,18 +61,18 @@ export const ProductCard = memo(function ProductCard({ product }: ProductCardPro
             </div>
           )}
           
-          <div className="flex items-center justify-between pt-4 mt-auto">
+          <div className="flex items-center justify-between pt-[16px] mt-auto">
              <QuantityStepper 
                quantity={quantity} 
                onIncrease={handleIncrease} 
                onDecrease={handleDecrease} 
              />
             
-            <div className="text-right flex items-center space-x-2">
+            <div className="flex flex-col items-end justify-center h-[32px]">
               {product.comparePrice && (
-                <span className="text-sm text-red-500 font-medium line-through">${product.comparePrice}</span>
+                <span className="text-[12px] text-[#6F7882] font-['Gilroy-Medium'] line-through">${product.comparePrice}</span>
               )}
-              <span className="text-base font-bold text-gray-900">${product.price}</span>
+              <span className="text-[12px] font-['Gilroy-SemiBold'] text-[#4E2FD2]">${product.price}</span>
             </div>
           </div>
         </div>

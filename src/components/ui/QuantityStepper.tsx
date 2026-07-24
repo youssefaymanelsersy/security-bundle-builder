@@ -11,22 +11,22 @@ interface QuantityStepperProps {
 
 export const QuantityStepper = memo(function QuantityStepper({ quantity, onIncrease, onDecrease, className }: QuantityStepperProps) {
   return (
-    <div className={cn("flex items-center space-x-3", className)}>
+    <div className={cn("flex items-center space-x-[10px]", className)}>
       <button
         onClick={onDecrease}
         disabled={quantity === 0}
-        className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+        className="w-[20px] h-[20px] flex items-center justify-center rounded-[4px] bg-[#F1F1F2] border-[1px] border-[#CED6DE] hover:bg-[#E2E8F0] disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
         aria-label="Decrease quantity"
       >
-        <Minus className="w-4 h-4 text-gray-700" />
+        <Minus className="w-[10px] h-[10px] text-[#575757]" strokeWidth={3} />
       </button>
-      <span className="w-4 text-center font-medium text-gray-900" aria-live="polite">{quantity}</span>
+      <span className="w-[12px] text-center text-[14px] leading-[16px] font-['Gilroy-SemiBold'] text-[#0B0D10]" aria-live="polite">{quantity}</span>
       <button
         onClick={onIncrease}
-        className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 transition-colors"
+        className="w-[20px] h-[20px] flex items-center justify-center rounded-[4px] bg-[#FFFFFF] border-[1px] border-[#CED6DE] hover:bg-[#F0F4F7] transition-colors"
         aria-label="Increase quantity"
       >
-        <Plus className="w-4 h-4 text-gray-700" />
+        <Plus className="w-[10px] h-[10px] text-[#575757]" strokeWidth={3} />
       </button>
     </div>
   );

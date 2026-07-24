@@ -24,7 +24,7 @@ export interface BundleState {
 export const useBundleStore = create<BundleState>((set, get) => ({
   selections: [],
   activeVariants: {},
-  currentStep: 1,
+  currentStep: typeof window !== 'undefined' && window.innerWidth < 1024 ? 0 : 1,
 
   increaseQuantity: (productId, variantId) => {
     set((state) => {
@@ -95,14 +95,14 @@ export const useBundleStore = create<BundleState>((set, get) => ({
       set({ 
         selections: data.selections, 
         activeVariants: data.activeVariants,
-        currentStep: data.currentStep || 1 
+        currentStep: data.currentStep ?? (typeof window !== 'undefined' && window.innerWidth < 1024 ? 0 : 1)
       });
     }
   },
 
   clearBundle: () => {
     clearStorage('bundle');
-    set({ selections: [], activeVariants: {}, currentStep: 1 });
+    set({ selections: [], activeVariants: {}, currentStep: typeof window !== 'undefined' && window.innerWidth < 1024 ? 0 : 1 });
   },
   
   seedDefaults: (selections, activeVariants) => {
